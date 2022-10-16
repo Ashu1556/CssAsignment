@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekster assignment</title>
+    <style>
+        body{
+            background-color: black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            height:500px;
+            width: 1000px;
+            background-color: aliceblue; 
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .flex1{
+            display: flex;
+            flex-direction: row;
+            flex: 0.3;
+            padding: 25px;
+            
+        }
+        .flex2{
+            display: flex;
+            flex-direction: row;
+            flex:0.6;
+            padding: 20px;
+        }
+        .flex22{
+            padding: 20px;
+            height:100%;
+            width:100%;
+            background-color: darkgray;
+            color:black;
+            font-size: larger;
+            flex:0.4;
+            border: 1px solid;
+        }
+        .flex23{
+            padding: 20px;
+            height:100%;
+            width:100%;
+            background-color: darkgray;
+            color:black;
+            font-size: larger;
+            flex:0.5;
+            border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .flex24{
+            display:flex;
+            flex-direction: column;
+            flex:0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="flex1">
+            <div style="flex:0.5; height:100%; width:100%; background-color: darkgray; border: 1px solid; padding: 10px; font-size: large;">A</div>
+            <div style="flex:0.3;"></div>
+            <div style="flex:0.2; height:100%; width:100%; background-color: darkgray; border: 1px solid; padding: 10px; font-size: large;">B</div>
+
+        </div>
+        <div class="flex2">
+            <div class="flex22">C</div>
+            <div style="flex:0.1;"></div>
+            <div class="flex23">
+                <div style="flex:0.4; height:90%; width:100%; padding: 20px; border-radius: 10px;  background-color: lightgray;">E</div>
+                <div class="flex24">
+                    <div style="height:25%; width:100%; background-color: lightgray; padding: 20px; border-radius: 10px;">F</div>
+                    <div style="height:35%; width:50%; background-color: lightgray; padding: 20px; border-radius: 10px;margin-left: 100px;">G</div>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
